@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://wsc7prghje5r"]
+
+[ext_resource type="Script" path="res://RigidBody2D.gd" id="1_jlypd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unjbl"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_jlypd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_unjbl")
